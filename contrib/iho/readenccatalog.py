@@ -58,7 +58,7 @@ with open('catalogue.xml') as fd:
          if enc == "enc":
            for cells in doc[cat][enc]:
              for cell in doc[cat][enc][cells]:
-               print "%s %d %s %s %s %s" % ( cell['dsnm'],getScale(cell['cscl']),
+               print("%s %d %s %s %s %s" % ( cell['dsnm'],getScale(cell['cscl']),
                                              cell['slat'],cell['wlon'],
-                                             cell['nlat'],cell['elon'])
+                                             cell['nlat'],cell['elon']))
 
